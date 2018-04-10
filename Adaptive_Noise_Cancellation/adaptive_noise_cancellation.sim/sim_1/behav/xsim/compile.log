@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_1/sim/design_1_processing_system7_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0_1/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_auto_pc_0_1/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/imports/vhdl/LMS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity LMS_Filter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m00_couplers_imp_15SPJYW
+INFO: [VRFC 10-307] analyzing entity m01_couplers_imp_XU9C55
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_UYSKKA
+INFO: [VRFC 10-307] analyzing entity design_1_ps7_0_axi_periph_0
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_LMS_Filter_0_0/sim/design_1_LMS_Filter_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_LMS_Filter_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper

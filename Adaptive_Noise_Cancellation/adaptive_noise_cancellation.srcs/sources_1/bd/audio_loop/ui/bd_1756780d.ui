@@ -1,0 +1,33 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port AC_ADR0_0 -pg 1 -y 70 -defaultsOSRD
+preplace port AC_GPIO2_0 -pg 1 -y 130 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 40 -defaultsOSRD
+preplace port AC_GPIO1_0 -pg 1 -y 110 -defaultsOSRD
+preplace port AC_GPIO3_0 -pg 1 -y 150 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 60 -defaultsOSRD
+preplace port AC_MCLK_0 -pg 1 -y 130 -defaultsOSRD
+preplace port AC_SCK_0 -pg 1 -y 150 -defaultsOSRD
+preplace port AC_ADR1_0 -pg 1 -y 90 -defaultsOSRD
+preplace port AC_GPIO0_0 -pg 1 -y 110 -defaultsOSRD
+preplace port AC_SDA_0 -pg 1 -y 170 -defaultsOSRD
+preplace inst audio_testbench_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 50 -defaultsOSRD
+preplace netloc audio_testbench_0_AC_GPIO0 1 3 1 1070J
+preplace netloc audio_testbench_0_AC_ADR0 1 3 1 1090J
+preplace netloc audio_testbench_0_AC_ADR1 1 3 1 1080J
+preplace netloc sys_clock_1 1 0 2 NJ 60 N
+preplace netloc clk_wiz_0_clk_out1 1 2 1 550
+preplace netloc AC_GPIO1_0_1 1 0 3 NJ 110 NJ 110 550J
+preplace netloc AC_GPIO2_0_1 1 0 3 -320J 120 NJ 120 560J
+preplace netloc Net 1 3 1 1040J
+preplace netloc AC_GPIO3_0_1 1 0 3 -310J 130 NJ 130 NJ
+preplace netloc audio_testbench_0_AC_SCK 1 3 1 1050J
+preplace netloc reset_rtl_1 1 0 2 NJ 40 N
+preplace netloc audio_testbench_0_AC_MCLK 1 3 1 1060J
+levelinfo -pg 1 -340 -110 460 890 1110 -top -10 -bot 600
+",
+}
+

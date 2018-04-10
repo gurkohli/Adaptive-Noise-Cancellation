@@ -1,0 +1,242 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Apr  4 19:41:36 2018
+# Process ID: 8260
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4156 U:\ENSC_452\adaptive_noise_cancellation-master\adaptive_noise_cancellation-master\adaptive_noise_cancellation.xpr
+# Log file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/vivado.log
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 928.465 ; gain = 187.707
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:module_ref:audio_top:1.0 - Audio_Codec
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - Mic_Channel_Select
+Adding cell -- xilinx.com:module_ref:AudioInOut16_v1_0:1.0 - Audio_AXI_Interface
+Adding cell -- xilinx.com:hls:nco:1.0 - Numeric_Oscillator
+Adding cell -- xilinx.com:module_ref:source_mux:1.0 - Source_Multiplexer
+Adding cell -- xilinx.com:module_ref:filter_control:1.0 - Filter_Multiplexer
+Adding cell -- xilinx.com:module_ref:pmod_i2s:1.0 - External_Mic_I2S
+Adding cell -- xilinx.com:user:lms_filter_ipcore:1.0 - LMS_Filter
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Filter_Output_Left
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Input_Source
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - External_Mic_AXI_Intf
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Noise_Source_Select_SW
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Filter_Output_Right
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /Audio_Codec/clk_100(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /Audio_AXI_Interface/CLK_100(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <design_1> from BD file <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 928.465 ; gain = 0.000
+generate_target all [get_files  U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_Codec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_AXI_Interface .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Mic_Channel_Select .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_I2S .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Numeric_Oscillator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Left .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Source_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Right .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Input_Source .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_AXI_Intf .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LMS_Filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Noise_Source_Select_SW .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_8/design_1_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 1096.477 ; gain = 155.934
+export_ip_user_files -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -directory U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files/sim_scripts -ip_user_files_dir U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files -ipstatic_source_dir U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files/ipstatic -lib_map_path [list {modelsim=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/modelsim} {questa=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/questa} {riviera=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/riviera} {activehdl=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv tamu.edu:user:ZedboardOLED:1.0 ZedboardOLED_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins ZedboardOLED_0/S00_AXI]
+</ZedboardOLED_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C30000 [ 64K ]>
+set_property location {5 1788 1733} [get_bd_cells ZedboardOLED_0]
+connect_bd_net [get_bd_ports SDIN] [get_bd_pins ZedboardOLED_0/SDIN]
+connect_bd_net [get_bd_ports SCLK] [get_bd_pins ZedboardOLED_0/SCLK]
+connect_bd_net [get_bd_ports DC] [get_bd_pins ZedboardOLED_0/DC]
+connect_bd_net [get_bd_ports RES] [get_bd_pins ZedboardOLED_0/RES]
+connect_bd_net [get_bd_ports VBAT] [get_bd_pins ZedboardOLED_0/VBAT]
+connect_bd_net [get_bd_ports VDD] [get_bd_pins ZedboardOLED_0/VDD]
+generate_target all [get_files  U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_Codec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_AXI_Interface .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Mic_Channel_Select .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_I2S .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Numeric_Oscillator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Left .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Source_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Right .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Input_Source .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_AXI_Intf .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LMS_Filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Noise_Source_Select_SW .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [IP_Flow 19-1972] Upgraded charLib from Block Memory Generator 8.2 to Block Memory Generator 8.4
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZedboardOLED_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 1292.215 ; gain = 161.086
+export_ip_user_files -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -directory U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files/sim_scripts -ip_user_files_dir U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files -ipstatic_source_dir U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.ip_user_files/ipstatic -lib_map_path [list {modelsim=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/modelsim} {questa=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/questa} {riviera=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/riviera} {activehdl=U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+regenerate_bd_layout
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Apr  4 19:46:34 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Wed Apr  4 19:46:34 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1303.949 ; gain = 8.660
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41240000 [ 64K ]>
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_i] [get_bd_pins processing_system7_0/FCLK_CLK0]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /axi_gpio_0/gpio_io_i(undef)
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins axi_gpio_0/gpio_io_i]
+connect_bd_net [get_bd_ports SW0] [get_bd_pins axi_gpio_0/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_Codec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_AXI_Interface .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Mic_Channel_Select .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_I2S .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Numeric_Oscillator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Left .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Source_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Right .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Input_Source .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_AXI_Intf .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LMS_Filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Noise_Source_Select_SW .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZedboardOLED_0 .
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IPIntegrator design U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [Common 17-344] 'launch_runs' was cancelled
+set_property name Source_Select_SW [get_bd_cells axi_gpio_0]
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'design_1_processing_system7_0_1' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'design_1_processing_system7_0_1' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_Codec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Audio_AXI_Interface .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Mic_Channel_Select .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_I2S .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Numeric_Oscillator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Left .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Source_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Multiplexer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Filter_Output_Right .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Input_Source .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block External_Mic_AXI_Intf .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LMS_Filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Noise_Source_Select_SW .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [IP_Flow 19-1972] Upgraded charLib from Block Memory Generator 8.2 to Block Memory Generator 8.4
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZedboardOLED_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Source_Select_SW .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Apr  4 20:21:08 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Wed Apr  4 20:21:08 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1482.504 ; gain = 91.406
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Apr  4 20:31:15 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/runme.log
+file copy -force U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  4 21:47:29 2018...

@@ -1,0 +1,86 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 7264
+License: Customer
+
+Current time: 	Thu Feb 08 18:07:42 PST 2018
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 328 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	gkohli
+User home directory: C:/Users/gkohli
+User working directory: U:/ENSC_452/adaptive_noise_cancellation
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.3
+RDI_DATADIR: C:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/gkohli/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/gkohli/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/gkohli/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	U:/ENSC_452/adaptive_noise_cancellation/vivado.log
+Vivado journal file location: 	U:/ENSC_452/adaptive_noise_cancellation/vivado.jou
+Engine tmp dir: 	U:/ENSC_452/adaptive_noise_cancellation/.Xil/Vivado-7264-ensc-pit-20
+
+GUI allocated memory:	182 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 501 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 41 MB (+40176kb) [00:00:05]
+// [Engine Memory]: 495 MB (+367426kb) [00:00:05]
+// bs (cl):  Open Project : addNotify
+// Opening Vivado Project: U:\ENSC_452\adaptive_noise_cancellation\adaptive_noise_cancellation.xpr. Version: Vivado v2017.3 
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 36 MB. Current time: 2/8/18 6:07:42 PM PST
+// Tcl Message: open_project U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 43 MB (+499kb) [00:00:15]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// [GUI Memory]: 45 MB (+85kb) [00:00:23]
+// [Engine Memory]: 523 MB (+3315kb) [00:00:23]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 48 MB (+124kb) [00:00:55]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 33 MB. Current time: 2/8/18 6:08:44 PM PST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 7000 ms.
+// [Engine Memory]: 557 MB (+8740kb) [00:01:23]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 8000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 575 MB. GUI used memory: 32 MB. Current time: 2/8/18 6:09:14 PM PST
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)

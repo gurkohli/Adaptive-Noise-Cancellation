@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Apr  5 14:54:51 2018
+# Process ID: 14208
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11300 U:\ENSC_452\adaptive_noise_cancellation-master\adaptive_noise_cancellation-master\adaptive_noise_cancellation.xpr
+# Log file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/vivado.log
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 873.973 ; gain = 40.715
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:module_ref:audio_top:1.0 - Audio_Codec
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - Mic_Channel_Select
+Adding cell -- xilinx.com:module_ref:AudioInOut16_v1_0:1.0 - Audio_AXI_Interface
+Adding cell -- xilinx.com:hls:nco:1.0 - Numeric_Oscillator
+Adding cell -- xilinx.com:module_ref:source_mux:1.0 - Source_Multiplexer
+Adding cell -- xilinx.com:module_ref:filter_control:1.0 - Filter_Multiplexer
+Adding cell -- xilinx.com:module_ref:pmod_i2s:1.0 - External_Mic_I2S
+Adding cell -- xilinx.com:user:lms_filter_ipcore:1.0 - LMS_Filter
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Filter_Output_Left
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Input_Source
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - External_Mic_AXI_Intf
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Noise_Source_Select_SW
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Filter_Output_Right
+Adding cell -- tamu.edu:user:ZedboardOLED:1.0 - ZedboardOLED_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Source_Select_SW
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /Audio_Codec/clk_100(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /Audio_AXI_Interface/CLK_100(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 988.563 ; gain = 85.320
+update_compile_order -fileset sources_1
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository/tamu.edu_user_ZedboardOLED_1.0/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository/lms_filter_ipcore_v1_0/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository/xilinx_com_hls_nco_1_0/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/mref/filter_control/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/mref/source_mux/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/mref/audio_top/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/mref/AudioInOut16_v1_0/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/mref/pmod_i2s/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.883 ; gain = 37.648
+report_ip_status -name ip_status
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  5 22:32:55 2018...

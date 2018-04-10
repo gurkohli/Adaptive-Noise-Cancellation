@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Apr  5 14:54:51 2018
+# Process ID: 14208
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11300 U:\ENSC_452\adaptive_noise_cancellation-master\adaptive_noise_cancellation-master\adaptive_noise_cancellation.xpr
+# Log file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/vivado.log
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.xpr
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf

@@ -1,0 +1,25 @@
+15:37:04 **** Auto Build of configuration Debug for project client_process ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../core_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:59:1: error: unknown type name 'XTime'
+ XTime tStart, tEnd;
+ ^~~~~
+../src/echo.c: In function 'udp_echo_recv':
+../src/echo.c:62:2: warning: implicit declaration of function 'XTime_GetTime' [-Wimplicit-function-declaration]
+  XTime_GetTime(&tEnd);
+  ^~~~~~~~~~~~~
+../src/echo.c:63:38: error: 'COUNTS_PER_SECOND' undeclared (first use in this function)
+  u32 usec = 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000);
+                                      ^~~~~~~~~~~~~~~~~
+../src/echo.c:63:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/echo.c:63:6: warning: unused variable 'usec' [-Wunused-variable]
+  u32 usec = 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000);
+      ^~~~
+make: *** [src/echo.o] Error 1
+
+15:37:06 Build Finished (took 1s.977ms)
+

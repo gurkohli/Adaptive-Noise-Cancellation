@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="33">
+  <CompositeFile CompositeFileTopName="audio_loop" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1518141913"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1518141913"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1518141913"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1518141913"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\audio_loop_audio_testbench_0_0\audio_loop_audio_testbench_0_0.xci" Type="IP">
+        <Instance HierarchyPath="audio_testbench_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1518141238" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\audio_loop_clk_wiz_0_0\audio_loop_clk_wiz_0_0.xci" Type="IP">
+        <Instance HierarchyPath="clk_wiz_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1518141243" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

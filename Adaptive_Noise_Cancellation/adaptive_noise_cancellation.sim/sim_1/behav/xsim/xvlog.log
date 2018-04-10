@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_1/sim/design_1_processing_system7_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0_1/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Programming/Git/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/bd/design_1/ip/design_1_auto_pc_0_1/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0

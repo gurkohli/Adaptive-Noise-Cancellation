@@ -1,0 +1,579 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Apr 10 10:59:12 2018
+# Process ID: 2656
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.vdi
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/IP_Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:40 . Memory (MB): peak = 332.922 ; gain = 41.641
+Command: link_design -top design_1_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 845 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0_1/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0_1/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0_1/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0_1/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/Filter_Output_Left/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/Filter_Output_Left/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/Filter_Output_Left/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/Filter_Output_Left/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_filter_output_left_0/design_1_filter_output_left_0_board.xdc] for cell 'design_1_i/Filter_Output_Right/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_filter_output_left_0/design_1_filter_output_left_0_board.xdc] for cell 'design_1_i/Filter_Output_Right/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_filter_output_left_0/design_1_filter_output_left_0.xdc] for cell 'design_1_i/Filter_Output_Right/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_filter_output_left_0/design_1_filter_output_left_0.xdc] for cell 'design_1_i/Filter_Output_Right/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/Input_Source/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/Input_Source/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/Input_Source/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/Input_Source/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/External_Mic_AXI_Intf/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/External_Mic_AXI_Intf/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/External_Mic_AXI_Intf/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/External_Mic_AXI_Intf/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_board.xdc] for cell 'design_1_i/Noise_Source_Select_SW/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3_board.xdc] for cell 'design_1_i/Noise_Source_Select_SW/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3.xdc] for cell 'design_1_i/Noise_Source_Select_SW/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_3/design_1_axi_gpio_0_3.xdc] for cell 'design_1_i/Noise_Source_Select_SW/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4_board.xdc] for cell 'design_1_i/Source_Select_SW/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4_board.xdc] for cell 'design_1_i/Source_Select_SW/U0'
+Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4.xdc] for cell 'design_1_i/Source_Select_SW/U0'
+Finished Parsing XDC File [u:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_4/design_1_axi_gpio_0_4.xdc] for cell 'design_1_i/Source_Select_SW/U0'
+Parsing XDC File [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:4]
+INFO: [Timing 38-2] Deriving generated clocks [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:4]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1192.195 ; gain = 527.313
+WARNING: [Vivado 12-627] No clocks matched 'zed_audio_clk_48M_'. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:5]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks zed_audio_clk_48M_]'. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk'. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:138]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc:138]
+Finished Parsing XDC File [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/constraints/zed_audio.xdc]
+Parsing XDC File [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/zedboard_master_XDC_RevC_D_v3/zedboard_master_XDC_RevC_D_v3.xdc]
+Finished Parsing XDC File [U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.srcs/constrs_1/imports/zedboard_master_XDC_RevC_D_v3/zedboard_master_XDC_RevC_D_v3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+13 Infos, 12 Warnings, 5 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1193.199 ; gain = 860.277
+write_hwdef: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1193.199 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.971 . Memory (MB): peak = 1193.199 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 4 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1b2226891
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1199.387 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 51 cells and removed 104 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
+Phase 2 Constant propagation | Checksum: 1adc8ce42
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1199.387 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 2 cells and removed 18 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 18ae602ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1199.387 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 314 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 18ae602ee
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1199.387 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 18ae602ee
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1199.387 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1199.387 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1c9931834
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1199.387 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-21.683 | TNS=-8575.667 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 1 Total Ports: 16
+Number of Flops added for Enable Generation: 1
+
+Ending PowerOpt Patch Enables Task | Checksum: 15baf1359
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 15baf1359
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.012 ; gain = 210.625
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Remap
+Phase 1 Remap | Checksum: 19a38676e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Opt 31-389] Phase Remap created 4 cells and removed 10 cells
+Ending Logic Optimization Task | Checksum: 19a38676e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 12 Warnings, 5 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1410.012 ; gain = 216.813
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.973 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[10] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[6]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[11] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[7]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[12] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[8]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[13] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[9]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[14] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[10]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[4] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[0]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[5] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[1]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[6] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[2]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[7] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[3]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[8] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[4]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRARDADDR[9] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToWrite[5]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pWr/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[10] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[6]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[11] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[7]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[12] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[8]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[13] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[9]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[14] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[10]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[6] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[2]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[7] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[3]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[8] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[4]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0 has an input control pin design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_0/ADDRBWRADDR[9] (net: design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/pNextWordToRead[5]) which is driven by a register (design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 150307f2c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c46f7699
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 168e24934
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 168e24934
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 168e24934
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 75bbd6b4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 75bbd6b4
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1737331fd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1f8a5dd83
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1d630c162
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1d630c162
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:26 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 18f06809c
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1a8c9a73c
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1268bba0f
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1268bba0f
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 171f04b7b
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 171f04b7b
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 178609506
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 178609506
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-25.518. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1ee7b4891
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1ee7b4891
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1ee7b4891
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1ee7b4891
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1d9cf18ae
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d9cf18ae
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Ending Placer Task | Checksum: 10b365b77
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 33 Warnings, 5 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:01 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 928055a6 ConstDB: 0 ShapeSum: 78b605d1 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: d2cc1e83
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 7563853f NumContArr: 5d689944 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: d2cc1e83
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: d2cc1e83
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: d2cc1e83
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 1410.012 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 209410f44
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.183| TNS=-9299.156| WHS=-2.349 | THS=-290.077|
+
+Phase 2 Router Initialization | Checksum: 1b4c05b41
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:36 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: fc44d61e
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:46 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1053
+ Number of Nodes with overlaps = 137
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-26.120| TNS=-14862.034| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: a3ccd7f8
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:01 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.921| TNS=-14861.323| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1098be63d
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:05 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.878| TNS=-14839.089| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: c3603577
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: c3603577
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 11b864596
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:07 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.878| TNS=-14711.344| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1ce18110c
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ce18110c
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1ce18110c
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:08 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 229e94d6a
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:08 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-25.855| TNS=-14693.913| WHS=-0.117 | THS=-0.117 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1788740d7
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:09 . Memory (MB): peak = 1410.012 ; gain = 0.000
+WARNING: [Route 35-468] The router encountered 81 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/Status_reg_i_1__0/I2
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/GrayCounter_pRd/Status_reg_i_1__0/I0
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[13]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[12]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[11]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[10]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[9]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[8]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[7]
+	design_1_i/Audio_AXI_Interface/U0/FIFO_InADC/Mem_reg_1/DIADI[6]
+	.. and 71 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 183600fee
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:09 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.58372 %
+  Global Horizontal Routing Utilization  = 4.7544 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 80.1802%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 82.8829%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 139ce6f3a
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:09 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 139ce6f3a
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:09 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1421b18e7
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:10 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1720c12af
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-25.855| TNS=-14698.424| WHS=0.055  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1720c12af
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 35 Warnings, 5 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:01 ; elapsed = 00:01:14 . Memory (MB): peak = 1410.012 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'U:/ENSC_452/adaptive_noise_cancellation-master/adaptive_noise_cancellation-master/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 10 11:04:19 2018...

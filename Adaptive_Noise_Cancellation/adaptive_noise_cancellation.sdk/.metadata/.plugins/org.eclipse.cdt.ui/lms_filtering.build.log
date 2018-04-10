@@ -1,0 +1,16 @@
+20:16:43 **** Build of configuration Debug for project lms_filtering ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lms_filter_process.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lms_filter_process.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lms_filtering_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/lms_filter_process.d" -MT"src/lms_filter_process.o" -o "src/lms_filter_process.o" "../src/lms_filter_process.c"
+In file included from ../src/lms_filter_process.c:6:0:
+../src/lms_filter_process.h:14:20: fatal error: xil_io.h: No such file or directory
+ #include <xil_io.h>
+                    ^
+compilation terminated.
+make: *** [src/lms_filter_process.o] Error 1
+
+20:16:44 Build Finished (took 1s.658ms)
+

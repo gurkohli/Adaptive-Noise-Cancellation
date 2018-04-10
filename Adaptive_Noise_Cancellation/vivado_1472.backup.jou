@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Apr  4 16:51:20 2018
+# Process ID: 1472
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15068 U:\ENSC_452\adaptive_noise_cancellation-master\adaptive_noise_cancellation.xpr
+# Log file: U:/ENSC_452/adaptive_noise_cancellation-master/vivado.log
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation-master\vivado.jou
+#-----------------------------------------------------------
+start_gui

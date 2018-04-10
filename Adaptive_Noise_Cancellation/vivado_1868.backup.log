@@ -1,0 +1,595 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Mar  8 14:09:13 2018
+# Process ID: 1868
+# Current directory: U:/ENSC_452/adaptive_noise_cancellation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15460 U:\ENSC_452\adaptive_noise_cancellation\adaptive_noise_cancellation.xpr
+# Log file: U:/ENSC_452/adaptive_noise_cancellation/vivado.log
+# Journal file: U:/ENSC_452/adaptive_noise_cancellation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Programming/Git/adaptive_noise_cancellation' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ProjectType
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_ps7_0_axi_periph_0
+design_1_system_ila_0_0
+design_1_auto_pc_0
+
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 955.035 ; gain = 189.574
+update_module_reference design_1_signal_multiplexer_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding cell -- xilinx.com:module_ref:audio_top:1.0 - audio_top_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:mult_gen:12.0 - mult_gen_0
+Adding cell -- xilinx.com:module_ref:AudioInOut16_v1_0:1.0 - AudioInOut16_v1_0_0
+Adding cell -- xilinx.com:module_ref:signal_multiplexer:1.0 - signal_multiplexer_0
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding cell -- xilinx.com:module_ref:pmod_i2s:1.0 - pmod_i2s_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0/CLK(clk)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_signal_multiplexer_0_0 from signal_multiplexer_v1_0 1.0 to signal_multiplexer_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /pmod_i2s_0/CLK(clk) and /signal_multiplexer_0_upgraded_ipi/clk_100_buffered(undef)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 991.930 ; gain = 35.813
+update_module_reference: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 991.930 ; gain = 35.813
+update_module_reference design_1_AudioInOut16_v1_0_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4753] Inferred signal 'interrupt' from port 'IRQ' as interface 'IRQ'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IRQ': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_AudioInOut16_v1_0_0_0 from AudioInOut16_v1_0_v1_0 1.0 to AudioInOut16_v1_0_v1_0 1.0
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 991.930 ; gain = 0.000
+update_module_reference design_1_pmod_i2s_0_2
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RESET' as interface 'RESET'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'CLK' as interface 'CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'LR_CLK' as interface 'LR_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'BIT_CLK' as interface 'BIT_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M_CLK' as interface 'M_CLK'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1012.195 ; gain = 20.266
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_ps7_0_axi_periph_0 design_1_system_ila_0_0}] -log ip_upgrade.log
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_ps7_0_axi_periph_0 (AXI Interconnect 2.1) from revision 16 to revision 15
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [IP_Flow 19-3422] Upgraded design_1_system_ila_0_0 (System ILA 1.1) from revision 1 to revision 0
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'U:/ENSC_452/adaptive_noise_cancellation/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1217.340 ; gain = 200.578
+export_ip_user_files -of_objects [get_ips {design_1_ps7_0_axi_periph_0 design_1_system_ila_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [xilinx.com:ip:system_ila:1.1-123] design_1_system_ila_0_0: The probe width of is 60
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [IP_Flow 19-5160] IP 'design_1_processing_system7_0_1' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'design_1_processing_system7_0_1' detected simulation language mismatch. Simulation type 'tlm_dpi' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Any Language' outputs instead.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1423.023 ; gain = 195.508
+export_ip_user_files -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd] -directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/sim_scripts -ip_user_files_dir U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files -ipstatic_source_dir U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.ip_user_files/ipstatic -lib_map_path [list {modelsim=U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.cache/compile_simlib/modelsim} {questa=U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.cache/compile_simlib/questa} {riviera=U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.cache/compile_simlib/riviera} {activehdl=U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Mar  8 14:14:39 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 14:14:39 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1477.223 ; gain = 0.000
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+file copy -force U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_DOUT_DEFAULT {0x00000001} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/ps7_0_axi_periph" Clk_xbar "/processing_system7_0/FCLK_CLK0 (100 MHz)" Clk_master "/processing_system7_0/FCLK_CLK0 (100 MHz)" Clk_slave "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]>
+startgroup
+set_property -dict [list CONFIG.PortBType.VALUE_SRC USER CONFIG.PortBWidth.VALUE_SRC USER] [get_bd_cells mult_gen_0]
+set_property -dict [list CONFIG.MultType {Parallel_Multiplier} CONFIG.PortBType {Unsigned} CONFIG.PortBWidth {8} CONFIG.ConstValue {129}] [get_bd_cells mult_gen_0]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins mult_gen_0/B]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk -hwspec U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property name pmod_mic_gain [get_bd_cells axi_gpio_0]
+set_property range 8K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_gpio_0_Reg}]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins pmod_mic_gain/GPIO]
+endgroup
+delete_bd_objs [get_bd_intf_nets pmod_mic_gain_GPIO] [get_bd_intf_ports GPIO_0]
+delete_bd_objs [get_bd_nets axi_gpio_0_gpio_io_o]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins pmod_mic_gain/GPIO]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins pmod_mic_gain/gpio_io_o]
+WARNING: [BD 41-1306] The connection to interface pin /pmod_mic_gain/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+endgroup
+delete_bd_objs [get_bd_intf_nets pmod_mic_gain_GPIO] [get_bd_intf_ports GPIO_0]
+connect_bd_net [get_bd_pins mult_gen_0/B] [get_bd_pins pmod_mic_gain/gpio_io_o]
+set_property name LD [get_bd_ports gpio_io_o_0]
+delete_bd_objs [get_bd_nets signal_multiplexer_0_LED0] [get_bd_ports LD0]
+delete_bd_objs [get_bd_ports LD2]
+delete_bd_objs [get_bd_ports LD4]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports LD4]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports LD2]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets signal_multiplexer_0_LED0] [get_bd_ports LD0]'
+delete_bd_objs [get_bd_ports LD4]
+delete_bd_objs [get_bd_ports LD2]
+delete_bd_objs [get_bd_ports LD1]
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:12:17
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469296
+set_property PROGRAM.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {4}] [get_bd_cells pmod_mic_gain]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PortBWidth {4}] [get_bd_cells mult_gen_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins pmod_mic_gain/GPIO]
+endgroup
+delete_bd_objs [get_bd_intf_nets pmod_mic_gain_GPIO] [get_bd_intf_ports GPIO_0]
+delete_bd_objs [get_bd_ports LD]
+delete_bd_objs [get_bd_nets pmod_mic_gain_gpio_io_o]
+startgroup
+make_bd_pins_external  [get_bd_pins pmod_mic_gain/gpio_io_o]
+WARNING: [BD 41-1306] The connection to interface pin /pmod_mic_gain/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+endgroup
+set_property name GAIN [get_bd_ports gpio_io_o_0]
+connect_bd_net [get_bd_pins mult_gen_0/B] [get_bd_pins pmod_mic_gain/gpio_io_o]
+delete_bd_objs [get_bd_ports LD3]
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortBWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortBType has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortBWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortBType has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_mic_gain .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Mar  8 14:46:13 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 14:46:14 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 2177.293 ; gain = 50.406
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1
+
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells pmod_mic_gain]
+delete_bd_objs [get_bd_nets pmod_mic_gain_gpio_io_o] [get_bd_ports GAIN]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:div_gen:5.1 div_gen_0
+endgroup
+delete_bd_objs [get_bd_cells div_gen_0]
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xbip_multadd:3.0 xbip_multadd_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0
+endgroup
+delete_bd_objs [get_bd_cells xbip_multadd_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0
+endgroup
+delete_bd_objs [get_bd_cells c_shift_ram_0]
+delete_bd_objs [get_bd_cells c_addsub_0]
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+Value does not match radix '10': 0.5
+startgroup
+set_property -dict [list CONFIG.MultType {Constant_Coefficient_Multiplier} CONFIG.PortBType {Signed} CONFIG.PortBWidth {18} CONFIG.ConstValue {1}] [get_bd_cells mult_gen_0]
+endgroup
+save_bd_design
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference design_1_pmod_i2s_0_2
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/imports/new/pmod_i2s.vhd:122]
+ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/imports/new/pmod_i2s.vhd'.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'pmod_i2s'.
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2286.898 ; gain = 0.000
+ERROR: [Common 17-39] 'update_module_reference' failed due to earlier errors.
+update_module_reference design_1_pmod_i2s_0_2
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RESET' as interface 'RESET'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'CLK' as interface 'CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'LR_CLK' as interface 'LR_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'BIT_CLK' as interface 'BIT_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M_CLK' as interface 'M_CLK'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2303.766 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Mar  8 15:10:17 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 15:10:17 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:37 . Memory (MB): peak = 2315.352 ; gain = 11.586
+update_module_reference design_1_pmod_i2s_0_2
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RESET' as interface 'RESET'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'CLK' as interface 'CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'LR_CLK' as interface 'LR_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'BIT_CLK' as interface 'BIT_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M_CLK' as interface 'M_CLK'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2325.301 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Mar  8 15:16:51 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 15:16:51 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 2395.824 ; gain = 70.523
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469296
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469296
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+file copy -force U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+set_property PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2018-Mar-08 15:38:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2018-Mar-08 15:38:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2463.164 ; gain = 26.563
+update_module_reference design_1_pmod_i2s_0_2
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RESET' as interface 'RESET'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'CLK' as interface 'CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'LR_CLK' as interface 'LR_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'BIT_CLK' as interface 'BIT_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M_CLK' as interface 'M_CLK'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2463.164 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Mar  8 15:43:28 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 15:43:28 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2538.840 ; gain = 75.676
+file copy -force U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469296
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469296
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+update_module_reference design_1_pmod_i2s_0_2
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'RESET' as interface 'RESET'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'CLK' as interface 'CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'LR_CLK' as interface 'LR_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'BIT_CLK' as interface 'BIT_CLK'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'M_CLK' as interface 'M_CLK'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_pmod_i2s_0_2 from pmod_i2s_v1_0 1.0 to pmod_i2s_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /signal_multiplexer_0/clk_100_buffered(undef) and /pmod_i2s_0_upgraded_ipi/CLK(clk)
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2538.840 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /mult_gen_0 PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/LR_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_LR_CLK 
+WARNING: [BD 41-927] Following properties on pin /pmod_i2s_0/BIT_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_pmod_i2s_0_2_BIT_CLK 
+Wrote  : <U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block signal_multiplexer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AudioInOut16_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pmod_i2s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mult_gen_0 .
+Exporting to file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'u:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Thu Mar  8 16:08:16 2018] Launched synth_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/synth_1/runme.log
+[Thu Mar  8 16:08:16 2018] Launched impl_1...
+Run output will be captured here: U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2573.184 ; gain = 34.344
+file copy -force U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+file copy -force U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.sysdef U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.sdk/design_1_wrapper.hdf
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469296
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248469296
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"design_1_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file U:/ENSC_452/adaptive_noise_cancellation/adaptive_noise_cancellation.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248469296
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  8 16:49:10 2018...
